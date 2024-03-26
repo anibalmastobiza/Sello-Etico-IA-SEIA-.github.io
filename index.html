@@ -122,54 +122,33 @@
 
             <br>Árbol de decisión para la viabilidad de una tecnología:<br>
             
-             <br>¿Se cumplen todos los criterios SEIA? <br>
-|
-|-- SÍ
-|   |
-|   |-- Implementar la tecnología.
-|
-|-- NO
-    |
-    |-- Evaluar las respuestas a las preguntas de cada criterio.
-        |
-        |-- ¿Es posible mitigar el riesgo asociado al criterio?
-        |   |
-        |   |-- SÍ
-        |   |   |
-        |   |   |-- Continuar con la evaluación.
-        |   |
-        |   |-- NO
-        |       |
-        |       |-- Detener el desarrollo de la tecnología.
-        |
-        |-- Si se han mitigado los riesgos o se cumplen todos los criterios:
-            |
-            |-- ¿Es la tecnología viable desde un punto de vista técnico?
-            |   |
-            |   |-- SÍ
-            |   |
-            |   |-- NO
-            |       |
-            |       |-- Detener el desarrollo de la tecnología.
-            |
-            |-- ¿Es la tecnología viable desde un punto de vista económico?
-            |   |
-            |   |-- SÍ
-            |   |
-            |   |-- NO
-            |       |
-            |       |-- Detener el desarrollo de la tecnología.
-            |
-            |-- ¿Existe un mercado viable para la tecnología?
-                |
-                |-- SÍ
-                |   |
-                |   |-- Implementar la tecnología.
-                |
-                |-- NO
-                    |
-                    |-- Detener el desarrollo de la tecnología.
-
+           <h1>Árbol Decisorio SEIA</h1>
+    <ul>
+        <li>¿Se cumplen todos los criterios SEIA?</li>
+        <li class="decision si">Implementar la tecnología.</li>
+        <li class="decision no">
+            Evaluar las respuestas a las preguntas de cada criterio.
+            <ul>
+                <li class="decision">¿Es posible mitigar el riesgo asociado al criterio?</li>
+                <li class="decision si">Continuar con la evaluación.</li>
+                <li class="decision no">Detener el desarrollo de la tecnología.</li>
+                <li class="decision">
+                    Si se han mitigado los riesgos o se cumplen todos los criterios:
+                    <ul>
+                        <li class="decision">¿Es la tecnología viable desde un punto de vista técnico?</li>
+                        <li class="decision si">Continuar con la evaluación.</li>
+                        <li class="decision no">Detener el desarrollo de la tecnología.</li>
+                        <li class="decision">¿Es la tecnología viable desde un punto de vista económico?</li>
+                        <li class="decision si">Continuar con la evaluación.</li>
+                        <li class="decision no">Detener el desarrollo de la tecnología.</li>
+                        <li class="decision">¿Existe un mercado viable para la tecnología?</li>
+                        <li class="decision si">Implementar la tecnología.</li>
+                        <li class="decision no">Detener el desarrollo de la tecnología.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
 
             
     </p>
